@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Offy </title>
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/bootstrap-icons.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar bg-dark border-bottom border-bottom-dark"
+         data-bs-theme="dark"">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> Offy </a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <nav class="mt-4">
+        <div class="nav nav-tabs" role="tablist">
+          <button class="nav-link active" id="teamtab"
+                  data-bs-toggle="tab" data-bs-target="#teamcontent"
+                  type="button" role="tab" aria-controls="teamcontent"
+                  aria-selected="true">
+             <i class="bi-person-rolodex"></i> Team
+          </button>
+          <button class="nav-link" id="offiestab" data-bs-toggle="tab"
+                  data-bs-target="#offiescontent" type="button" role="tab"
+                  aria-controls="offiescontent" aria-selected="false">
+            <i class="bi-buildings"></i> Offies
+          </button>
+          <button class="nav-link" id="communitytab" data-bs-toggle="tab"
+                  data-bs-target="#communitycontent" type="button" role="tab"
+                  aria-controls="communitycontent" aria-selected="false">
+            <i class="bi-lightbulb"></i> Community
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content">
+        <!-- Team content -->
+        <div class="tab-pane fade show active" id="teamcontent" role="tabpanel"
+             aria-labelledby="teamtab" tabindex="0">
+          <table class="table table-hover caption-top mt-3">
+            <caption> Status </caption>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="badge rounded-pill text-bg-success"> &nbsp; </span>
+                </td>
+                <td> Noah </td>
+                <td class="text-muted"> Regus </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="badge rounded-pill text-bg-danger"> &nbsp; </span>
+                </td>
+                <td> Jeffrey </td>
+                <td class="text-muted"> Parc </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Offies content -->
+        <div class="tab-pane fade" id="offiescontent" role="tabpanel"
+             aria-labelledby="offiestab" tabindex="0"> 
+          <div class="accordion mt-4" id="offiesaccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#offies01"
+                        aria-expanded="true" aria-controls="offies01">
+                  <i class="bi-building"></i> &nbsp; Regus
+                </button>
+              </h2>
+              <div id="offies01" class="accordion-collapse collapse show"
+                   data-bs-parent="#offiesaccordion">
+                <div class="accordion-body">
+                  <span class="display-6"> 19&deg;C </span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#offies02"
+                        aria-expanded="false" aria-controls="offies02">
+                  <i class="bi-building"></i> &nbsp; Parc
+                </button>
+              </h2>
+              <div id="offies02" class="accordion-collapse collapse"
+                   data-bs-parent="#offiesaccordion">
+                <div class="accordion-body">
+                  <span class="display-6"> 21&deg;C </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Community content -->
+        <div class="tab-pane fade" id="communitycontent" role="tabpanel"
+             aria-labelledby="communitytab" tabindex="0">
+          <table class="table table-hover caption-top mt-4">
+            <caption> Highlighted </caption>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="badge rounded-pill text-bg-warning"> 3 </span>
+                </td>
+                <td> 19&deg;C </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="badge rounded-pill text-bg-warning"> 1 </span>
+                </td>
+                <td> Orange metro line </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="badge rounded-pill text-bg-warning"> 1 </span>
+                </td>
+                <td> Conference room </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <nav class="navbar fixed-bottom bg-body-tertiary">
+      <div class="container-fluid">
+        &copy; Offy 2023
+      </div>
+    </nav>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
